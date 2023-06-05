@@ -1,6 +1,10 @@
 import { NavLink } from "react-router-dom";
 import Logo from "../icon/Logo";
 
+
+
+
+
 const Footer = () => {
   return (
     <div className="h-[560px] lg:h-[800px] xs:h-[850px] xs:pt-[50px] relative bg-[#1D293E] px-[350px] pt-[100px] lg:px-[80px] xs:px-[10px] text-white">
@@ -80,7 +84,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col col-span-3 gap-7">
           <span className="text-[18px]">Discovery</span>
-          <div className="grid grid-cols-5 gap-4 text-[15px] font-light">
+          <div className="grid grid-cols-5 gap-2 text-[15px] font-light">
             <div className="flex flex-col col-span-2 gap-4">
               <span className="whitespace-nowrap">Ha Noi</span>
               <span className="whitespace-nowrap">Ho Chi Minh</span>

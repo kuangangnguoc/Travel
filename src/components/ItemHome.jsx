@@ -34,7 +34,7 @@ const ItemHome = ({ image, avatar, address, title, description }) => {
           <img src={avatar} alt="" className="w-full h-full rounded-full" />
         </div>
       </div>
-      <div className=" flex flex-col pl-5 pt-4 gap-[11px] pr-[25px]">
+      <div className=" flex flex-col pl-5 pt-4 gap-[11px] pr-[25px] min-h-[150px]">
         <div>
           <span>{address}</span>
         </div>

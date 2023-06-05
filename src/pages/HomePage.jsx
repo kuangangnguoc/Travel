@@ -65,7 +65,7 @@ const HomePage = () => {
                 </div>
                 <div className="w-full h-full ml-3 border-l border-[#717171]">
                   <label htmlFor="search" className="ml-6 text-black">
-                    Check in
+                    Check out
                   </label>
                   <input
                     name="search"
@@ -86,7 +86,7 @@ const HomePage = () => {
                   />
                 </div>
               </div>
-              <div className="absolute bottom-0 translate-y-[-20%] right-2">
+              <div className="absolute bottom-0 translate-y-[-20%] right-2  cursor-pointer">
                 <SearchButton></SearchButton>
               </div>
             </StyledDiv>
@@ -104,7 +104,7 @@ const HomePage = () => {
             <NavLink to={"/listing/details"}>
               <ItemHome
                 image="ItemHome.png"
-                avatar={"Avatar.png"}
+                avatar={"TEST2.jpg"}
                 address={"Sai Gon, Ho Chi Minh city"}
                 title={"Cheerful 1-bedroom in a townhouse with parking."}
                 description={
@@ -115,22 +115,22 @@ const HomePage = () => {
             <NavLink to={"/listing/details"}>
               <ItemHome
                 image="Home1.png"
-                avatar={"Avatar.png"}
-                address={"Sai Gon, Ho Chi Minh city"}
-                title={"Cheerful 1-bedroom in a townhouse with parking."}
+                avatar={"Avt.png"}
+                address={"Quang Nam, Hoi An"}
+                title={"Ventilated area surrounded by beautiful gardens and barbeque allowed."}
                 description={
-                  "This unique place has a style all its own, pets allowed and only 25  mins to the city centre."
+                  "Near the Hoi An ancient town and other tourist attractions, motorcycle for rent with cheap price."
                 }
               ></ItemHome>
             </NavLink>
             <NavLink to={"/listing/details"}>
               <ItemHome
                 image="ItemHome.png"
-                avatar={"Avatar.png"}
-                address={"Sai Gon, Ho Chi Minh city"}
-                title={"Cheerful 1-bedroom in a townhouse with parking."}
+                avatar={"Avatar1.png"}
+                address={"Tay Ho, Ha Noi"}
+                title={"Nice homestay with double bed and smoke-free balcony."}
                 description={
-                  "This unique place has a style all its own, pets allowed and only 25  mins to the city centre."
+                  "Free Wifi access, gym and swimming pool free entrance, a supermarket below the resident area."
                 }
               ></ItemHome>
             </NavLink>
@@ -143,10 +143,9 @@ const HomePage = () => {
           </div>
         </div>
         <div className="mx-auto flex flex-col items-center gap-3 mt-[80px]">
-          <h3 className="text-[30px] font-medium">Exclusive deals</h3>
+          <h3 className="text-[30px] font-medium">Trending Cities</h3>
           <span className="text-[16px] font-normal text-[#717171]">
-            Discover some of the most popular listings in Vietnam based on user
-            reviews and ratings.
+          Cities You Must Explore This Summer.
           </span>
           <div className="flex gap-[20px] mt-2">
             <div className="relative">
@@ -157,7 +156,7 @@ const HomePage = () => {
                 className="h-[100%] rounded-lg"
               />
               <div className=" flex flex-col absolute bottom-[28px] text-white gap-1 items-center left-[50%] translate-x-[-50%]">
-                <span className="text-lg font-medium">Ha Giang</span>
+                <span className="text-lg font-medium cursor-pointer">Ha Giang</span>
                 <span className="text-sm font-normal">62 Listings</span>
               </div>
             </div>
@@ -169,8 +168,8 @@ const HomePage = () => {
                 className="h-[100%] rounded-lg"
               />
               <div className=" flex flex-col absolute bottom-[28px] text-white gap-1 items-center left-[50%] translate-x-[-50%] mb:hidden">
-                <span className="text-lg font-medium">Ha Giang</span>
-                <span className="text-sm font-normal">62 Listings</span>
+                <span className="text-lg font-medium cursor-pointer">Da Nang</span>
+                <span className="text-sm font-normal">45 Listings</span>
               </div>
             </div>
           </div>
@@ -183,8 +182,8 @@ const HomePage = () => {
                 className="h-[100%] rounded-lg"
               />
               <div className=" flex flex-col absolute bottom-[28px] text-white gap-1 items-center left-[50%] translate-x-[-50%] mb:hidden">
-                <span className="text-lg font-medium">Ha Giang</span>
-                <span className="text-sm font-normal">62 Listings</span>
+                <span className="text-lg font-medium cursor-pointer">Ha Long Bay</span>
+                <span className="text-sm font-normal">86 Listings</span>
               </div>
             </div>
             <div className="relative">
@@ -195,8 +194,8 @@ const HomePage = () => {
                 className="h-[100%] rounded-lg"
               />
               <div className=" flex flex-col absolute bottom-[28px] text-white gap-1 items-center left-[50%] translate-x-[-50%] ">
-                <span className="text-lg font-medium">Ha Giang</span>
-                <span className="text-sm font-normal">62 Listings</span>
+                <span className="text-lg font-medium cursor-pointer">Ho Chi Minh</span>
+                <span className="text-sm font-normal">21 Listings</span>
               </div>
             </div>
           </div>
@@ -213,7 +212,7 @@ const HomePage = () => {
           </div>
           <div className=" flex gap-[96px] lg:gap-[40px] xs:gap-[5px] sm:gap-[10px] mb:hidden">
             <div className="flex flex-col items-center gap-[37px] xs:gap-[20px] ">
-              <div className="w-[100px] h-[100px] lg:w-[80px] lg:h-[80px] bg-[#ED4949] xs:w-[70px] xs:h-[70px] rounded-full flex items-center justify-center">
+              <div className="w-[100px] h-[100px] lg:w-[80px] lg:h-[80px] bg-[#ED4949] xs:w-[70px] xs:h-[70px] rounded-full flex items-center justify-center cursor-pointer">
                 <svg
                   width="40"
                   height="40"
@@ -240,16 +239,16 @@ const HomePage = () => {
               </div>
               <div className="flex flex-col items-center gap-2">
                 <span className="text-[18px] font-medium lg:text-[14px]">
-                  Find accommodation
+                Find accommodation
                 </span>
                 <span className="text-[15px] font-normal w-[310px] text-center lg:text-[12px] sm:hidden">
-                  Explore and engage with exceptional nearby accommodations,
+                Explore and engage with exceptional nearby accommodations,
                   immersing yourself in the authentic local lifestyle.
                 </span>
               </div>
             </div>
             <div className="flex flex-col items-center gap-[37px] xs:gap-[20px] ">
-              <div className="w-[100px] h-[100px] bg-[#ED4949] lg:w-[80px] lg:h-[80px] xs:w-[70px] xs:h-[70px] rounded-full flex items-center justify-center ">
+              <div className="w-[100px] h-[100px] bg-[#ED4949] lg:w-[80px] lg:h-[80px] xs:w-[70px] xs:h-[70px] rounded-full flex items-center justify-center cursor-pointer ">
                 <svg
                   width="40"
                   height="40"
@@ -284,16 +283,15 @@ const HomePage = () => {
               </div>
               <div className="flex flex-col items-center gap-2">
                 <span className="text-[18px] font-medium lg:text-[14px]">
-                  Find accommodation
+                Review Listings
                 </span>
                 <span className="text-[15px] font-normal w-[310px] text-center lg:text-[12px] sm:hidden">
-                  Explore and engage with exceptional nearby accommodations,
-                  immersing yourself in the authentic local lifestyle.
+                Examine the listings of accommodations and choose your favorite one that provides excellent value for its price.
                 </span>
               </div>
             </div>
             <div className="flex flex-col items-center gap-[37px] xs:gap-[20px] sm:hidden">
-              <div className="w-[100px] h-[100px] bg-[#ED4949] lg:w-[80px] lg:h-[80px] xs:w-[70px] xs:h-[70px] rounded-full flex items-center justify-center">
+              <div className="w-[100px] h-[100px] bg-[#ED4949] lg:w-[80px] lg:h-[80px] xs:w-[70px] xs:h-[70px] rounded-full flex items-center justify-center cursor-pointer">
                 <svg
                   width="40"
                   height="40"
@@ -320,11 +318,10 @@ const HomePage = () => {
               </div>
               <div className="flex flex-col items-center gap-2">
                 <span className="text-[18px] font-medium lg:text-[14px]">
-                  Find accommodation
+                Make a Reservation
                 </span>
                 <span className="text-[15px] font-normal w-[310px] text-center lg:text-[12px]">
-                  Explore and engage with exceptional nearby accommodations,
-                  immersing yourself in the authentic local lifestyle.
+                Easily book your reservation within a minute and enjoy the flexibility to cancel anytime without incurring any fees.
                 </span>
               </div>
             </div>
@@ -344,11 +341,11 @@ const HomePage = () => {
           <div className="flex">
             <div className="w-[550px] xl:w-[400px] lg:w-[300px] xs:hidden relative h-[320px] rounded-[15px] flex flex-col items-center gap-[20px] justify-center">
               <div className="absolute w-full h-full bg-[#F9F7F1] opacity-60"></div>
-              <img src="Avatar1.png" alt="" className=" w-[70px] h-[70px]" />
+              <img src="review3.png" alt="" className=" w-[70px] h-[70px] rounded-full" />
               <div className="flex flex-col items-center gap-[2px]">
-                <span className="text-[18px] font-medium">Viet</span>
+                <span className="text-[18px] font-medium">Quang</span>
                 <span className="text-[15px] font-normal text-[#717171]">
-                  Hai Phong
+                  Ha Noi
                 </span>
               </div>
               <span className="text-[#717171] text-center w-[387px] lg:w-[280px] text-[15px]">
@@ -374,16 +371,15 @@ const HomePage = () => {
             </div>
             <div className="w-[550px] xl:w-[400px] lg:w-[300px] xs:hidden relative h-[320px] rounded-[15px] flex flex-col items-center gap-[20px] justify-center">
               <div className="absolute w-full h-full bg-[#F9F7F1] opacity-60"></div>
-              <img src="Avatar1.png" alt="" className=" w-[70px] h-[70px ]" />
+              <img src="Avatar.png" alt="" className=" w-[70px] h-[70px ] rounded-full" />
               <div className="flex flex-col items-center gap-[2px]">
-                <span className="text-[18px] font-medium">Viet</span>
+                <span className="text-[18px] font-medium">Tam</span>
                 <span className="text-[15px] font-normal text-[#717171]">
-                  Hai Phong
+                  Ho Chi Minh
                 </span>
               </div>
               <span className="text-[#717171] text-center w-[387px] lg:w-[280px]  text-[15px]">
-                The best hotel booking site Ive used. Instant confirmation,
-                competitive prices, and hassle-free cancellations.
+              Time and money-saving hotel bookings. User-friendly and flexible. Highly recommended.
               </span>
             </div>
           </div>
@@ -407,7 +403,7 @@ const HomePage = () => {
               <ItemArticles
                 image={"images.png"}
                 name={"Bao Ngoc"}
-                date={"May 20, 2021"}
+                date={"May 20, 2022"}
                 address={"Quang Binh"}
                 title={
                   "Explore the UNESCO World Heritage largest cave of Vietnam"
@@ -416,65 +412,67 @@ const HomePage = () => {
             </NavLink>
             <NavLink to={"/blog/cafe-apartment"}>
               <ItemArticles
-                image={"images.png"}
-                name={"Bao Ngoc"}
-                date={"May 20, 2021"}
-                address={"Quang Binh"}
+                image={"hue.png"}
+                name={"David"}
+                date={"January 16, 2023"}
+                address={"Hue"}
                 title={
-                  "Explore the UNESCO World Heritage largest cave of Vietnam"
+                  "Check-in Hoa Dang Festival: Illuminating the night in Hue’s splendor"
                 }
               ></ItemArticles>
             </NavLink>
             <NavLink to={"/blog/cafe-apartment"}>
               <ItemArticles
-                image={"images.png"}
-                name={"Bao Ngoc"}
-                date={"May 20, 2021"}
-                address={"Quang Binh"}
+                image={"hanoi.png"}
+                name={"Chang Liao"}
+                date={"March 28, 2022"}
+                address={"Ha Noi"}
                 title={
-                  "Explore the UNESCO World Heritage largest cave of Vietnam"
+                  "Check out the extraordinary sight of Ha Noi’s urban life"
                 }
               ></ItemArticles>
             </NavLink>
             <NavLink to={"/blog/cafe-apartment"}>
               <ItemArticles
-                image={"images.png"}
-                name={"Bao Ngoc"}
-                date={"May 20, 2021"}
-                address={"Quang Binh"}
+                image={"hochiminh.png"}
+                name={"Sytske"}
+                date={"April 26, 2022"}
+                address={"Ho Chi Minh"}
                 title={
-                  "Explore the UNESCO World Heritage largest cave of Vietnam"
+                  "Cafe Apartment-Discover the perfect blend of old-world charm"
                 }
               ></ItemArticles>
             </NavLink>
             <NavLink to={"/blog/cafe-apartment"}>
               <ItemArticles
-                image={"images.png"}
-                name={"Bao Ngoc"}
+                image={"sapa.png"}
+                name={"Quoc Viet"}
                 date={"May 20, 2021"}
-                address={"Quang Binh"}
+                address={"Sapa"}
                 title={
-                  "Explore the UNESCO World Heritage largest cave of Vietnam"
+                  "Majestic Fansipan moutain: The rooftop of Vietnam"
                 }
               ></ItemArticles>
             </NavLink>
             <NavLink to={"/blog/cafe-apartment"}>
               <ItemArticles
-                image={"images.png"}
-                name={"Bao Ngoc"}
-                date={"May 20, 2021"}
-                address={"Quang Binh"}
+                image={"binhthuan.png"}
+                name={"Helmi"}
+                date={"June 17, 2021"}
+                address={"Binh Thuan"}
                 title={
-                  "Explore the UNESCO World Heritage largest cave of Vietnam"
+                  "Don’t miss Ta Cu mountain: A spiritual and natural oasis in Binh Thuan"
                 }
               ></ItemArticles>
             </NavLink>
           </div>
+          <NavLink to={"/blog"}>
           <div className="flex gap-2 mt-3">
             <button className="w-[200px] h-[55px] bg-[#ED4949] rounded-lg text-white font-semibold">
               View all articles
             </button>
           </div>
+          </NavLink>
         </div>
       </div>
       <div className="mt-[120px]">

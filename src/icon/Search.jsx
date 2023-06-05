@@ -2,7 +2,7 @@ import React from "react";
 
 const Search = () => {
   return (
-    <div className="xs:hidden">
+    <div className="xs:hidden  cursor-pointer">
       <svg
         width="21"
         height="23"
